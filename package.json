@@ -4,7 +4,6 @@
   "description": "A simple node server application",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "ng build --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
