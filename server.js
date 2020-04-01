@@ -12,9 +12,6 @@ app.use(function (req, res, next) {
 require('./controllers/quiz.controller.server')(app)
 require('./controllers/question.controller.server')(app)
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
+app.listen(3000)
 
 
