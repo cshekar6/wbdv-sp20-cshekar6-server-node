@@ -8,4 +8,8 @@ module.exports = (app) => {
     app.get('/api/quizzes/:qid/attempts', (req, res) =>
         quizAttemptDao.findAttemptsForQuiz(req.params.qid)
             .then(attempts => res.send(attempts)))
+
+    app.get('/api/quizzes/attempts/all', (req,res) =>
+        quizAttemptDao.findAllAttempts()
+            .then( result => res.send(result)))
 }
